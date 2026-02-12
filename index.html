@@ -3,66 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kaif Codes</title>
+<title>Md Kaif | Portfolio</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
 <body>
 
+<!-- Custom Cursor -->
+<div class="cursor"></div>
+
 <!-- Navbar -->
-<nav>
-  <h2>KaifCodes</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<nav class="navbar">
+    <h2 class="logo">Kaif</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/skills.html">Skills</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
 </nav>
 
 <!-- Hero Section -->
 <section class="hero">
-  <img src="IMG-20240926-WA0038.jpg" class="profile">
 
-  <h1 class="fade-in">Md Kaif</h1>
-  <p class="fade-in">Full Stack Developer | CSE Student</p>
+    <div class="hero-text">
 
-</section>
+        <h1>Hi, I'm <span class="neon">Md Kaif</span></h1>
 
-<!-- About -->
-<section id="about" class="reveal">
-  <h2>About Me</h2>
-  <p>
-    I build mobile apps, AI solutions and full stack web applications.
-    Passionate about technology and innovation.
-  </p>
-</section>
+        <h2 class="typing"></h2>
 
-<!-- Projects -->
-<section id="projects">
+        <p>
+            Passionate Full Stack Developer focused on building scalable
+            backend systems and AI powered applications.
+        </p>
 
-  <h2 class="reveal">Projects</h2>
+        <div class="cta">
+            <a href="pages/projects.html" class="btn">View Projects</a>
+            <a href="pages/contact.html" class="btn outline">Contact Me</a>
+            <a href="assets/resume.pdf" class="btn">Download Resume</a>
+        </div>
 
-  <div class="project-card reveal">
-    <h3>MedBuddy</h3>
-    <p>Medical records management mobile application.</p>
-  </div>
+    </div>
 
-  <div class="project-card reveal">
-    <h3>SmartCall AI</h3>
-    <p>AI powered call assistant for businesses.</p>
-  </div>
+    <div class="hero-img">
+        <img src="assets/images/dev-avatar.png">
+    </div>
 
 </section>
 
-<!-- Contact -->
-<section id="contact" class="reveal">
-  <h2>Contact</h2>
-  <p>Email: yourmail@gmail.com</p>
-</section>
+<!-- Animated Background -->
+<canvas id="particles"></canvas>
 
-<script src="script.js"></script>
+<script src="js/main.js"></script>
+<script src="js/typing.js"></script>
+<script src="js/cursor.js"></script>
 
 </body>
 </html>
